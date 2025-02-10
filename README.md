@@ -1,6 +1,6 @@
 # Guía de Instalación y Ejecución de la Aplicación en Python
 
-## Instalación de Python
+## Instalación de Pythonn
 
 ### Windows
 1. Descarga Python desde la página oficial: [https://www.python.org/downloads/](https://www.python.org/downloads/)

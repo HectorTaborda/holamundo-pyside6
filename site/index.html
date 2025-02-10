@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        <link rel="canonical" href="https://github.com/HectorTaborda/holamundo-pyside6/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Documentación holamundo_pyside6</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Documentación holamundo_pyside6</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#guia-de-instalacion-y-ejecucion-de-la-aplicacion-en-python" class="nav-link">Guía de Instalación y Ejecución de la Aplicación en Python</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#instalacion-de-pythonnn" class="nav-link">Instalación de Pythonnn</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#instalacion-y-activacion-de-pip" class="nav-link">Instalación y Activación de pip</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#creacion-y-activacion-de-entorno-virtual" class="nav-link">Creación y Activación de Entorno Virtual</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ejecucion-de-la-aplicacion" class="nav-link">Ejecución de la Aplicación</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ejemplo-aplicacion-con-pyside6" class="nav-link">Ejemplo: Aplicación con PySide6</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#instalacion-de-dependencias" class="nav-link">Instalación de Dependencias</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="guia-de-instalacion-y-ejecucion-de-la-aplicacion-en-python">Guía de Instalación y Ejecución de la Aplicación en Python</h1>
+<h2 id="instalacion-de-pythonnn">Instalación de Pythonnn</h2>
+<h3 id="windows">Windows</h3>
+<ol>
+<li>Descarga Python desde la página oficial: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+<li>Ejecuta el instalador y asegúrate de marcar la opción <strong>"Add Python to PATH"</strong>.</li>
+<li>Haz clic en <strong>"Install Now"</strong> y espera a que termine la instalación.</li>
+<li>Para verificar la instalación, abre la terminal (<strong>cmd</strong>) y ejecuta:
+   <code>sh
+   python --version</code></li>
+</ol>
+<h3 id="linux">Linux</h3>
+<ol>
+<li>
+<p>Abre una terminal y actualiza la lista de paquetes:
+   <code>sh
+   sudo apt update  # Para distribuciones basadas en Debian
+   sudo pacman -Syu  # Para Arch</code></p>
+</li>
+<li>
+<p>Verifica la instalación:
+   <code>sh
+   python3 --version</code></p>
+</li>
+</ol>
+<h2 id="instalacion-y-activacion-de-pip">Instalación y Activación de pip</h2>
+<h3 id="windows_1">Windows</h3>
+<p>Pip se instala automáticamente con Python. Para verificarlo, ejecuta en la terminal:</p>
+<pre><code class="language-sh">pip --version
+</code></pre>
+<p>Si no está instalado, usa:</p>
+<pre><code class="language-sh">python -m ensurepip --default-pip
+</code></pre>
+<h3 id="linux_1">Linux</h3>
+<p>Pip viene directamente con python pero también puede instalarse con:</p>
+<pre><code class="language-sh">sudo apt install python3-pip  # Debian/Ubuntu
+sudo pacman -S python-pip  # Arch Linux
+</code></pre>
+<p>Verifica la instalación con:</p>
+<pre><code class="language-sh">pip3 --version
+</code></pre>
+<h2 id="creacion-y-activacion-de-entorno-virtual">Creación y Activación de Entorno Virtual</h2>
+<h3 id="windows_2">Windows</h3>
+<ol>
+<li>Crea el entorno virtual:
+   <code>sh
+   python -m venv venv</code></li>
+<li>Activa el entorno:
+   <code>sh
+   venv\Scripts\activate</code>
+   Para desactivarlo, usa:
+   <code>sh
+   deactivate</code></li>
+</ol>
+<h3 id="linux_2">Linux</h3>
+<ol>
+<li>Crea el entorno virtual:
+   <code>sh
+   python3 -m venv venv</code></li>
+<li>Activa el entorno:
+   <code>sh
+   source venv/bin/activate</code>
+   Para desactivarlo:
+   <code>sh
+   deactivate</code></li>
+</ol>
+<h2 id="ejecucion-de-la-aplicacion">Ejecución de la Aplicación</h2>
+<p>Para ejecutar la aplicación, usa:</p>
+<pre><code class="language-sh">python desarrollo-interfaces.py  
+</code></pre>
+<p>Si usas Python 3 específicamente:</p>
+<pre><code class="language-sh">python3 desarrollo-interfaces.py  
+</code></pre>
+<h2 id="ejemplo-aplicacion-con-pyside6">Ejemplo: Aplicación con PySide6</h2>
+<p>Si la aplicación usa <code>PySide6</code>, un ejemplo de código con un "Hola Mundo" seria:</p>
+<pre><code class="language-python">from PySide6.QtWidgets import QApplication, QLabel
+import sys
+
+app = QApplication(sys.argv)
+label = QLabel(&quot;¡Hola Mundo!&quot;)
+label.show()
+sys.exit(app.exec())
+</code></pre>
+<p>Para ejecutar este código, asegúrate de instalar <code>PySide6</code> con:</p>
+<pre><code class="language-sh">pip install PySide6
+</code></pre>
+<p>Luego, ejecuta el script:</p>
+<pre><code class="language-sh">python desarrollo-interfaces.py
+</code></pre>
+<h2 id="instalacion-de-dependencias">Instalación de Dependencias</h2>
+<p>Con el entorno virtual activado, instala las dependencias del proyecto:</p>
+<pre><code class="language-sh">pip install -r requirements.txt
+</code></pre>
+<p>Si no tienes el archivo <code>requirements.txt</code>, puedes generarlo con:
+(Esto generará un archivo con las depencias de la aplicacioón que tenemos instaladas)</p>
+<pre><code class="language-sh">pip freeze &gt; requirements.txt
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-02-10 18:13:09.912510+00:00
+-->
