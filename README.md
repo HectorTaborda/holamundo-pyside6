@@ -88,6 +88,10 @@ Con el entorno virtual activado, instala las dependencias del proyecto:
 ```sh
 pip install -r requirements.txt
 ```
+Si no tienes el archivo `requirements.txt`, puedes generarlo con:
+```sh
+pip freeze > requirements.txt
+```
 
 ## Ejecución de la Aplicación
 Para ejecutar la aplicación, usa:
@@ -97,3 +101,26 @@ python app.py  # O el nombre del script principal
 Si el script usa Python 3 específicamente:
 ```sh
 python3 app.py
+```
+
+## Ejemplo: Aplicación con PySide6
+Si la aplicación usa `PySide6`, un ejemplo de código con un "Hola Mundo" sería:
+
+```python
+from PySide6.QtWidgets import QApplication, QLabel
+import sys
+
+app = QApplication(sys.argv)
+label = QLabel("¡Hola Mundo!")
+label.show()
+sys.exit(app.exec())
+```
+
+Para ejecutar este código, asegúrate de instalar `PySide6` con:
+```sh
+pip install PySide6
+```
+Luego, ejecuta el script:
+```sh
+python app.py
+```
