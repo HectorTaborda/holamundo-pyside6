@@ -1,12 +1,12 @@
 # Guía de Instalación y Ejecución de la Aplicación en Python
 
-## Instalación de Python 3
+## Instalación de Python
 
 ### Windows
-1. Descarga el instalador de Python desde la página oficial: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+1. Descarga Python desde la página oficial: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 2. Ejecuta el instalador y asegúrate de marcar la opción **"Add Python to PATH"**.
 3. Haz clic en **"Install Now"** y espera a que termine la instalación.
-4. Para verificar la instalación, abre la terminal (**cmd** o **PowerShell**) y ejecuta:
+4. Para verificar la instalación, abre la terminal (**cmd**) y ejecuta:
    ```sh
    python --version
    ```
@@ -15,15 +15,9 @@
 1. Abre una terminal y actualiza la lista de paquetes:
    ```sh
    sudo apt update  # Para distribuciones basadas en Debian
-   sudo dnf update  # Para Fedora
    sudo pacman -Syu  # Para Arch
    ```
-2. Instala Python 3:
-   ```sh
-   sudo apt install python3  # Para distros basadas en debian
-   sudo dnf install python3  # Fedora
-   sudo pacman -S python  # Arch 
-   ```
+   
 3. Verifica la instalación:
    ```sh
    python3 --version
@@ -45,7 +39,6 @@ python -m ensurepip --default-pip
 Pip viene directamente con python pero también puede instalarse con:
 ```sh
 sudo apt install python3-pip  # Debian/Ubuntu
-sudo dnf install python3-pip  # Fedora
 sudo pacman -S python-pip  # Arch Linux
 ```
 Verifica la instalación con:
@@ -83,29 +76,18 @@ pip3 --version
    deactivate
    ```
 
-## Instalación de Dependencias
-Con el entorno virtual activado, instala las dependencias del proyecto:
-```sh
-pip install -r requirements.txt
-```
-Si no tienes el archivo `requirements.txt`, puedes generarlo con:
-(Esto generará un archivo con las depencias de la aplicacioón que tenemos instaladas)
-```sh
-pip freeze > requirements.txt
-```
-
 ## Ejecución de la Aplicación
 Para ejecutar la aplicación, usa:
 ```sh
-python app.py  # O el nombre del script principal
+python desarrollo-interfaces.py  
 ```
-Si el script usa Python 3 específicamente:
+Si usas Python 3 específicamente:
 ```sh
-python3 app.py
+python3 desarrollo-interfaces.py  
 ```
 
 ## Ejemplo: Aplicación con PySide6
-Si la aplicación usa `PySide6`, un ejemplo de código con un "Hola Mundo" sería:
+Si la aplicación usa `PySide6`, un ejemplo de código con un "Hola Mundo" seria:
 
 ```python
 from PySide6.QtWidgets import QApplication, QLabel
@@ -123,5 +105,16 @@ pip install PySide6
 ```
 Luego, ejecuta el script:
 ```sh
-python app.py
+python desarrollo-interfaces.py
+```
+
+## Instalación de Dependencias
+Con el entorno virtual activado, instala las dependencias del proyecto:
+```sh
+pip install -r requirements.txt
+```
+Si no tienes el archivo `requirements.txt`, puedes generarlo con:
+(Esto generará un archivo con las depencias de la aplicacioón que tenemos instaladas)
+```sh
+pip freeze > requirements.txt
 ```
