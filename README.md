@@ -14,15 +14,15 @@
 ### Linux
 1. Abre una terminal y actualiza la lista de paquetes:
    ```sh
-   sudo apt update  # Para distribuciones basadas en Debian (Ubuntu, etc.)
+   sudo apt update  # Para distribuciones basadas en Debian
    sudo dnf update  # Para Fedora
-   sudo pacman -Syu  # Para Arch Linux
+   sudo pacman -Syu  # Para Arch
    ```
 2. Instala Python 3:
    ```sh
-   sudo apt install python3  # Debian/Ubuntu
+   sudo apt install python3  # Para distros basadas en debian
    sudo dnf install python3  # Fedora
-   sudo pacman -S python  # Arch Linux
+   sudo pacman -S python  # Arch 
    ```
 3. Verifica la instalación:
    ```sh
@@ -42,7 +42,7 @@ python -m ensurepip --default-pip
 ```
 
 ### Linux
-Pip generalmente viene preinstalado, pero si no, puedes instalarlo con:
+Pip viene directamente con python pero también puede instalarse con:
 ```sh
 sudo apt install python3-pip  # Debian/Ubuntu
 sudo dnf install python3-pip  # Fedora
@@ -89,6 +89,7 @@ Con el entorno virtual activado, instala las dependencias del proyecto:
 pip install -r requirements.txt
 ```
 Si no tienes el archivo `requirements.txt`, puedes generarlo con:
+(Esto generará un archivo con las depencias de la aplicacioón que tenemos instaladas)
 ```sh
 pip freeze > requirements.txt
 ```
